@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/GymBro/static/css/main.624ab385.css",
-    "main.js": "/GymBro/static/js/main.a86db579.js",
+    "main.js": "/GymBro/static/js/main.abb47bfd.js",
     "static/media/gym.jpg": "/GymBro/static/media/gym.d9b26ea08208a990870f.jpg",
     "static/media/fa-solid-900.ttf": "/GymBro/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
     "static/media/fa-brands-400.ttf": "/GymBro/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
@@ -13,10 +13,10 @@
     "static/media/fa-v4compatibility.woff2": "/GymBro/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/GymBro/index.html",
     "main.624ab385.css.map": "/GymBro/static/css/main.624ab385.css.map",
-    "main.a86db579.js.map": "/GymBro/static/js/main.a86db579.js.map"
+    "main.abb47bfd.js.map": "/GymBro/static/js/main.abb47bfd.js.map"
   },
   "entrypoints": [
     "static/css/main.624ab385.css",
-    "static/js/main.a86db579.js"
+    "static/js/main.abb47bfd.js"
   ]
 }

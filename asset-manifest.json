@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gymbro/static/css/main.1edb7a35.css",
-    "main.js": "/gymbro/static/js/main.205c4006.js",
+    "main.js": "/gymbro/static/js/main.aa177331.js",
     "static/media/gym.jpg": "/gymbro/static/media/gym.d9b26ea08208a990870f.jpg",
     "static/media/fa-solid-900.ttf": "/gymbro/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
     "static/media/fa-brands-400.ttf": "/gymbro/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
@@ -13,10 +13,10 @@
     "static/media/fa-v4compatibility.woff2": "/gymbro/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/gymbro/index.html",
     "main.1edb7a35.css.map": "/gymbro/static/css/main.1edb7a35.css.map",
-    "main.205c4006.js.map": "/gymbro/static/js/main.205c4006.js.map"
+    "main.aa177331.js.map": "/gymbro/static/js/main.aa177331.js.map"
   },
   "entrypoints": [
     "static/css/main.1edb7a35.css",
-    "static/js/main.205c4006.js"
+    "static/js/main.aa177331.js"
   ]
 }

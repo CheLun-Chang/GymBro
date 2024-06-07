@@ -1,24 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./components/pages/Home";
+import MyPlan from "./components/pages/MyPlan";
+import Support from "./components/pages/Support";
+import "./App.css";
+import { PlanProvider } from "./components/PlanContext";
 
 function App() {
+  const [plan, setPlan] = useState([]);
+
+  const addPlan = (name, sets, reps, weight) => {
+    setPlan((prevPlan) => [...prevPlan, { name, sets, reps, weight }]);
+  };
+
+  const removeLi = (indexToRemove) => {
+    const newPlan = plan.filter((item, index) => index !== indexToRemove);
+    setPlan(newPlan);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PlanProvider>
+      <Router>
+        <div className="App">
+          <Navbar />
+          <main>
+            <Routes>
+              <Route path="/" element={<Home addPlan={addPlan} />} />
+              <Route
+                path="/myPlan"
+                element={
+                  <MyPlan plan={plan} removeLi={removeLi} setPlan={setPlan} />
+                }
+              />
+              <Route path="/support" element={<Support />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </Router>
+    </PlanProvider>
   );
 }
 

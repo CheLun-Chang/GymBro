@@ -1,0 +1,15 @@
+h2 {
+  background-color: orange;
+  border: 8px solid black;
+  z-index: 6;
+  color: black;
+  width: 80%;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+}
+.where {
+  z-index: 10;
+}

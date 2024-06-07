@@ -18,41 +18,63 @@ const Home = ({ addPlan }) => {
     setShow(true);
   };
 
+  const imageUrl = process.env.PUBLIC_URL + "/image"; // 定義圖片路徑的變量
+
   const cardsData = [
     {
-      imageSrc: "/image/chest.jpg",
+      imageSrc: process.env.PUBLIC_URL + "/image/chest.png",
       title: "胸肌",
       text: "心胸寬闊，有容乃大。",
       onClick: () =>
-        handleShow("槓鈴握推", "胸肌的王牌動作", "/image/benchpress.jpg"),
+        handleShow(
+          "槓鈴握推",
+          "胸肌的王牌動作",
+          process.env.PUBLIC_URL + "/image/benchpress.jpg"
+        ),
     },
     {
-      imageSrc: "/image/back.png",
+      imageSrc: process.env.PUBLIC_URL + "/image/back.png",
       title: "背部",
       text: "新手練胸，老手練背!",
       onClick: () =>
-        handleShow("槓鈴划船", "背部的王牌動作", "/image/barbellrow.jpg"),
+        handleShow(
+          "槓鈴划船",
+          "背部的王牌動作",
+          process.env.PUBLIC_URL + "/image/barbellrow.jpg"
+        ),
     },
     {
-      imageSrc: "/image/arm.png",
+      imageSrc: process.env.PUBLIC_URL + "/image/arm.png",
       title: "手臂",
       text: "打造粗壯手臂!",
       onClick: () =>
-        handleShow("繩索下壓", "手臂的王牌動作", "/image/triceps.jpg"),
+        handleShow(
+          "繩索下壓",
+          "手臂的王牌動作",
+          process.env.PUBLIC_URL + "/image/triceps.jpg"
+        ),
     },
     {
-      imageSrc: "/image/shoulder.png",
+      imageSrc: process.env.PUBLIC_URL + "/image/shoulder.png",
       title: "肩部",
       text: "肩膀要寬才好看",
       onClick: () =>
-        handleShow("槓鈴肩推", "肩部的王牌動作", "/image/shoulderpress.jpg"),
+        handleShow(
+          "槓鈴肩推",
+          "肩部的王牌動作",
+          process.env.PUBLIC_URL + "/image/shoulderpress.jpg"
+        ),
     },
     {
-      imageSrc: "/image/leg.png",
+      imageSrc: process.env.PUBLIC_URL + "/image/leg.png",
       title: "腿部",
       text: "想要腹肌?那就給我去練腿!",
       onClick: () =>
-        handleShow("槓鈴深蹲", "腿部的王牌動作", "/image/squat.jpg"),
+        handleShow(
+          "槓鈴深蹲",
+          "腿部的王牌動作",
+          process.env.PUBLIC_URL + "/image/squat.jpg"
+        ),
     },
   ];
 
